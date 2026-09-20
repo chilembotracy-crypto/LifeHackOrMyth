@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+    <TextView
+        android:id="@+id/caseNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:text="Case 1/12"
+        android:textSize="12sp"
+        android:fontFamily="monospace"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Score: 0"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/statementText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:padding="20dp"
+        android:background="@drawable/card_background"
+        android:fontFamily="monospace"
+        android:textSize="16sp"
+        android:text="&quot;Putting your phone in rice will fix water damage.&quot;"
+        app:layout_constraintTop_toBottomOf="@id/caseNumberText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/hackButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Hack"
+        app:layout_constraintTop_toBottomOf="@id/statementText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mythButton" />
+
+    <Button
+        android:id="@+id/mythButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Myth"
+        app:layout_constraintTop_toBottomOf="@id/statementText"
+        app:layout_constraintStart_toEndOf="@id/hackButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:padding="12dp"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/hackButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="Next case"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/feedbackText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
