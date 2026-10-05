@@ -1,6 +1,8 @@
 package com.tracy.lifehackormyth
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,13 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val startButton = findViewById<android.widget.Button>(R.id.startButton)
+        startButton.setOnClickListener {
+            Log.d("MainActivity", "Start button clicked - launching QuestionActivity")
+            val intent = Intent(this, QuestionActivity::class.java)
+            startActivity(intent)
         }
     }
 }
