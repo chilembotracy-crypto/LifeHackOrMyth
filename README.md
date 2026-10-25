@@ -20,7 +20,15 @@ I committed my work to git after every feature was finished (question logic, sco
 
 
 ## Screenshots
-![Welcome](screenshots/welcome.png)
+<img src="screenshots/welcome.png" width="220" alt="Welcome screen">
+<img src="screenshots/question.png" width="220" alt="Question screen">
+<img src="screenshots/score.png" width="220" alt="Score screen">
+<img src="screenshots/review.png" width="220" alt="Review screen">
+
+GitHub Actions build passing:
+
+<img src="screenshots/actions-green-tick.png" width="600" alt="GitHub Actions build passing">
+
  
 ## Video demo
 [Watch the demo video](https://youtube.com/shorts/y33v0DT7PUI?si=ye5De64-e8gCI4ng)
